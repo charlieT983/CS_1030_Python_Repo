@@ -1,0 +1,38 @@
+#def DetermineGreenHouse(paramTemp, paramMoisture):
+    #localTemp = paramTemp
+    #if paramTemp <= 10:
+        #print("The temp is low")
+    #elif paramTemp >= 35:
+        #print("The Temp is high")
+    #else:
+        #print("The Temp is Good")
+    #localMoisture = paramMoisture
+    #if paramMoisture <= 30:
+        #print("Nedds Water")
+    #else:
+        #print("No Water needed")
+    #return localTemp
+    #return localMoisture
+
+
+temp = float(input("What is the temp in the GreenHouse: "))
+moisture = float(input("What is the moisture level: "))
+
+if temp <= 10:
+    print("temp low")
+elif temp >=35:
+    print("temp too high")
+else:
+    print("The temp is okay")
+
+if moisture <= 30:
+    print("Need Water")
+else:
+    print("does not need water")
+
+print(f"The greenhouse status is: {temp}, {moisture}")
+
+
+
+
+
