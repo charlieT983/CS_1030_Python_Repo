@@ -1,31 +1,40 @@
 from random import randint
+
+def ComputerChoose():
+    chosen = randint(1,3)
+    if chosen == 1:
+        computer = "r"
+    elif chosen == 2:
+        computer = "p"
+    else:
+        computer = "s"
+    print(computer)
+    return computer 
+
+def CheckResualt():
+    if player1 == computer:
+        print("Draw")
+    elif player1 == "r" and computer == "p":
+        print("computer wins!")
+    elif player1 == "p" and computer == "r":
+        print("player wins!")
+    elif player1 == "s" and computer == "p":
+        print("player wins!")
+    else:
+        player1 == "p" and computer == "s"
+        print("computer wins!")
+    return CheckResualt
+
 #user input 
-user = input("please choose rock (r), paper (p), or scissors (s): ")
+player1 = input("please choose rock (r), paper (p), or scissors (s): ")
+computer = ComputerChoose()
+mycheckResualt = CheckResualt(player1, computer)
+print(mycheckResualt)
 
 
 
-#computer choosing
-chosen = randint(1,3)
-if chosen == 1:
-    computer = "r"
-elif chosen == 2:
-    computer = "p"
-else:
-    computer = "s"
-print(computer)
 
-#Check resualt
-if user == computer:
-    print("Draw")
-elif user == "r" and computer == "p":
-    print("computer wins!")
-elif user == "p" and computer == "r":
-    print("player wins!")
-elif user == "s" and computer == "p":
-    print("player wins!")
-else:
-    user == "p" and computer == "s"
-    print("computer wins!")
+
 
 #computer = randint(1,3)
 #if computer == 1:
