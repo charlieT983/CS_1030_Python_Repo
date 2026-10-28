@@ -1,0 +1,43 @@
+from random import randint
+#user input 
+user = input("please choose rock (r), paper (p), or scissors (s): ")
+
+
+
+#computer choosing
+chosen = randint(1,3)
+if chosen == 1:
+    computer = "r"
+elif chosen == 2:
+    computer = "p"
+else:
+    computer = "s"
+print(computer)
+
+#Check resualt
+if user == computer:
+    print("Draw")
+elif user == "r" and computer == "p":
+    print("computer wins!")
+elif user == "p" and computer == "r":
+    print("player wins!")
+elif user == "s" and computer == "p":
+    print("player wins!")
+else:
+    user == "p" and computer == "s"
+    print("computer wins!")
+
+#computer = randint(1,3)
+#if computer == 1:
+    #print("r")
+#elif computer == 2:
+    #print("p")
+#else:
+    #computer == 3
+    #print("s")
+
+
+
+
+
+
