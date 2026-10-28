@@ -11,19 +11,18 @@ def ComputerChoose():
     print(computer)
     return computer 
 
-def CheckResualt():
+def CheckResualt(player1, computer):
     if player1 == computer:
-        print("Draw")
-    elif player1 == "r" and computer == "p":
-        print("computer wins!")
+        return("Draw")
+    elif player1 == "r" and computer == "s":
+        return("player wins!")
     elif player1 == "p" and computer == "r":
-        print("player wins!")
+        return("player wins!")
     elif player1 == "s" and computer == "p":
-        print("player wins!")
+        return("player wins!")
     else:
-        player1 == "p" and computer == "s"
-        print("computer wins!")
-    return CheckResualt
+        return("computer wins!")
+    
 
 #user input 
 player1 = input("please choose rock (r), paper (p), or scissors (s): ")
