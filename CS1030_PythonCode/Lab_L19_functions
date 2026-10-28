@@ -1,18 +1,13 @@
-def DetermineGreenHouseTemp():
-    temp = 0
-    
+def DetermineGreenHouseTemp(temp):
     if temp <= 10:
         print("The temp is low")
     elif temp >= 35:
         print("The Temp is high")
     else:
         print("The Temp is Good")
-    
-    
     return temp
 
-def DetermineGreenHouseMoisture():
-    moisture = 0
+def DetermineGreenHouseMoisture(moisture):
     if moisture <= 30:
         print("Nedds Water")
     else:
