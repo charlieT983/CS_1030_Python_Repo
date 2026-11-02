@@ -31,7 +31,9 @@ def PlayAgian():
         computer = ComputerChoose()
         mycheckResualt = CheckResualt(player1, computer)
         print(mycheckResualt)
-        localPlayer1 = input("Play again? yes (y) or no (n):")
+        myScore = KeepScore(player1Score, computerScore)
+        print(myScore)
+        
     else:
         localPlayer1 == "n"
         print("Thanks for playing")
@@ -41,13 +43,13 @@ def PlayAgian():
     
 
 def KeepScore(player1Score, computerScore):
-    
     while player1Score == 0 and computerScore == 0:
         if myCheckResualt == "player wins!":
             player1Score = player1Score + 1
         elif myCheckResualt == "computer wints!":
             computerScore = computerScore + 1
-        elif myCheckResualt == "Draw":
+        else:
+            myCheckResualt == "Draw"
             player1Score = player1Score + 0
             computerScore = computerScore + 0
     return player1Score, computerScore
