@@ -24,11 +24,45 @@ def CheckResualt(player1, computer):
         return("computer wins!")
     
 
+def PlayAgian():
+    localPlayer1 = input("Play again? yes (y) or no (n):")
+    while localPlayer1 == "y":
+        player1 = input("please choose rock (r), paper (p), or scissors (s): ")
+        computer = ComputerChoose()
+        mycheckResualt = CheckResualt(player1, computer)
+        print(mycheckResualt)
+        localPlayer1 = input("Play again? yes (y) or no (n):")
+    else:
+        localPlayer1 == "n"
+        print("Thanks for playing")
+    
+    
+
+    
+
+def KeepScore(player1Score, computerScore):
+    
+    while player1Score == 0 and computerScore == 0:
+        if myCheckResualt == "player wins!":
+            player1Score = player1Score + 1
+        elif myCheckResualt == "computer wints!":
+            computerScore = computerScore + 1
+        elif myCheckResualt == "Draw":
+            player1Score = player1Score + 0
+            computerScore = computerScore + 0
+    return player1Score, computerScore
+
 #user input 
+player1Score = 0 
+computerScore = 0
 player1 = input("please choose rock (r), paper (p), or scissors (s): ")
 computer = ComputerChoose()
-mycheckResualt = CheckResualt(player1, computer)
-print(mycheckResualt)
+myCheckResualt = CheckResualt(player1, computer)
+print(myCheckResualt)
+myScore = KeepScore(player1Score, computerScore)
+print(myScore)
+myPlayAgian = PlayAgian()
+print(myPlayAgian)
 
 
 
