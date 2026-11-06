@@ -47,3 +47,15 @@ def KeepScore(player1Score, computerScore, paramDraw):
             myCheckResualt == "Draw"
             paramDraw = paramDraw + 1           
     return player1Score, paramDraw, computerScore 
+
+
+#origanl playagain
+def PlayAgian():
+    localPlayer1 = input("Play again? yes (y) or no (n):")
+    while localPlayer1 == "y":
+        player1 = input("please choose rock (r), paper (p), or scissors (s): ")
+        computer = ComputerChoose()
+        myCheckResualt = CheckResualt(player1, computer)
+        print(myCheckResualt)
+        myScore = KeepScore(player1Score, computerScore, draw)
+        print(myScore)
