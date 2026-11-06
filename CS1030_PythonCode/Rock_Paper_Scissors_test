@@ -1,0 +1,49 @@
+
+
+#original
+def KeepScore(player1Score, computerScore, paramDraw):
+    while player1Score == 0 and computerScore == 0 and paramDraw == 0:
+         
+        if myCheckResualt == "player wins!":
+            player1Score = player1Score + 1
+            #counterScore = computerScore + 0
+        elif myCheckResualt == "computer wins!":
+            computerScore = computerScore + 1
+        else:
+            myCheckResualt == "Draw"
+            player1Score = player1Score + 0
+            computerScore = computerScore + 0
+            
+    return player1Score, computerScore
+
+
+#test 1
+def KeepScore(player1Score, computerScore, paramDraw):
+    player1Score = 0 
+    computerScore = 0
+    paramDraw = 0
+    while player1Score == 0 and computerScore == 0 and paramDraw == 0:
+         
+        if myCheckResualt == "player wins!":
+            player1Score = player1Score + 1
+            #counterScore = computerScore + 0
+        elif myCheckResualt == "computer wins!":
+            computerScore = computerScore + 1
+        else:
+            myCheckResualt == "Draw"
+            player1Score = player1Score + 0
+            computerScore = computerScore + 0            
+    return player1Score, paramDraw, computerScore 
+
+
+#test 2
+def KeepScore(player1Score, computerScore, paramDraw):
+        if myCheckResualt == "player wins!":
+            player1Score = player1Score + 1
+            #counterScore = computerScore + 0
+        elif myCheckResualt == "computer wins!":
+            computerScore = computerScore + 1
+        else:
+            myCheckResualt == "Draw"
+            paramDraw = paramDraw + 1           
+    return player1Score, paramDraw, computerScore 
